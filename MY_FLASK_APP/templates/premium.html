@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('../static/qq.jpg'); /* Add your background image path */
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .section {
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .section h2 {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        .section p {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .contact-info {
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Premium Services!</h1>
+        
+        <div class="section">
+            <h2>CO2 Emitted</h2>
+            <p>Please enter the percentage of CO2 emitted:</p>
+            <form action="/calculate" method="post">
+                <label for="co2_percentage">CO2 Percentage:</label>
+                <input type="number" id="co2_percentage" name="co2_percentage" min="0" max="100" step="0.01" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Type of Industry</h2>
+            <p>Please select the type of industry:</p>
+            <form action="/calculate" method="post">
+                <label for="industry">Industry:</label>
+                <select id="industry" name="industry" required>
+                    <option value="Power Generation Industry">Power Generation Industry</option>
+                    <option value="Transportation Industry">Transportation Industry</option>
+                    <option value="Cement/Steel Industry">Cement/Steel Industry</option>
+                    <option value="Agriculture">Agriculture</option>
+                    <option value="Buildings and Residential Heating">Buildings and Residential Heating</option>
+                    <option value="Waste Management">Waste Management</option>
+                    <option value="Others">Others</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Value Proposition</h2>
+            <p>Our motto is to reduce carbon emissions at any cost.</p>
+        </div>
+
+        <div class="section">
+            <h2>Methodology</h2>
+            <p>Sustainable measures:</p>
+            <p>Urgent action required: 
+                Emission is reduced across the sectors <br>
+                Climate action  <br> 
+                Population health <br>
+                Sustainable resource management <br>
+                Employement prospects  <br>
+             2. Invest in innovative technologies for decarbonization: <br>
+                Innovation development <br>
+                Footprint reduction <br>
+                Market superiority <br>
+                Adaptability <br>
+             
+             3. Implement strict regulations on greenhouse gas emissions: <br>
+                Adherence and responsibility  <br>
+                Emission abatement  <br>
+                Statergic planning  <br>
+                Regularity stability <br>
+             
+             4. Raise awareness and mobilize public support for climate action*:  <br>
+                Behaviour adjustment <br>
+                Government determination  <br>
+                Public participation <br> 
+                Skill building and emancipation</p> 
+            <!-- Add description and image here -->
+        </div>
+
+        <div class="section">
+            <h2>Technologies Used</h2>
+            <p>List of technologies used:</p>
+            <p>Dark Red Zone (High Carbon Emissions):
+                Coal-fired power plants <br>
+                Conventional gasoline and diesel vehicles <br>
+                Heavy industries <br>
+                Conventional agriculture practices <br>
+                Red Zone (Significant Carbon Emissions):
+                 Natural gas-fired power plants   <br>
+                 Traditional waste management   <br>
+                 Traditional urban transportation  <br>
+                 Energy-intensive manufacturing processes  <br>
+                
+                Orange Zone (Moderate Carbon Emissions): <br>
+                 Renewable energy technologies  <br>
+                 Energy-efficient buildings  <br>
+                 Water conservation technologies  <br>
+                 Sustainable agriculture practices  <br>
+                
+                Green Zone (Low Carbon Emissions): <br>
+                Electric vehicles (EVs)  <br>
+                Energy-efficient appliances and lighting <br>
+                Renewable energy storage  <br>
+                Circular economy strategies</p>
+            <!-- Add technologies list here -->
+        </div>
+
+        <div class="section">
+            <label for="co2_percentage">Reduced carbon emission</label>
+                <input type="number" id="reduced_carbon_emission" name="reduced_carbon_emission" min="0" max="100" step="0.01" required>
+                <button type="submit">Submit</button>
+            <!-- This will be populated dynamically based on the calculation -->
+        </div>
+
+        <div class="contact-info">
+            <h2>For Further Details</h2>
+            <p>Collaborations: You can collaborate with other companies who are already our customers.</p>
+            <p>Email: spoorthymudragada@gmail.com</p>
+            <p>Phone Number: 7670836092</p>
+            <p>Instagram: spoorthy_24</p>
+            <p>Facebook: spoorthymudragada</p>
+        </div>
+    </div>
+</body>
+</html>
+
